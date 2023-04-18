@@ -34,7 +34,7 @@ namespace Practice___Constructors__Methods__and_Overloading
 
         public void WithDraw(double amount) //creat a withdraw method
         {
-            if(amount > 0)//if user passes a positive number subtract it from the balance
+            if(amount > 0 && amount <= _Balance)//if user passes a positive number subtract it from the balance
             {
                 _Balance -= amount;
             }            
